@@ -67,9 +67,9 @@ Da un ejemplo
 _Y repite_
 
 ```
-hasta finalizar
+hasta finalizar 
 ```
-
+ 
 _Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Ejecutando las pruebas ⚙️
