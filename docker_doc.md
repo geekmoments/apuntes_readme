@@ -12,7 +12,7 @@ _>listar contenedores_
 ```
 docker ps -a
 ```
-_>detalles de un contenerdor (no se considera las " ")_
+_>detalles de un contenedor (no se considera las " ")_
 
 ```
 docker inspect "container_name"
@@ -53,17 +53,17 @@ docker run -it ubuntu
 ```
 ### Ciclo de vida de un contedor
 
-_>Levantar contenerdor enviando un comando de ejecución_
+_>Levantar contenedor enviando un comando de ejecución_
 
 ```
 docker run --name alwaysup -d tail -f /etc/null
 ```
-_El contenedor permanece activo y podemos intereactual con el mediante:_
+_El contenedor permanece activo y podemos intereactuar con el mediante:_
 
 ```
 docker exec -it alwaysup bash
 ```
-_>Matar proceso de contenerdor. Extraemos el proceso en la PC ejecutando:_
+_>Matar proceso de contenedor. Extraemos el proceso en la PC ejecutando:_
 
 ```
 docker inspect --format {{.State.Pid}} alwaysup 
