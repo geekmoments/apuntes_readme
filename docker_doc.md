@@ -51,8 +51,25 @@ _>Levantando contenedor de ubuntu en modo interactivo: Esto nos permite acceder 
 ```
 docker run -it ubuntu
 ```
+### Ciclo de vida de un contedor
 
+_>Levantar contenerdor enviando un comando de ejecución_
 
+```
+docker run --name alwaysup -d tail -f /etc/null
+```
+_El contenedor permanece activo y podemos intereactual con el mediante:_
+
+```
+docker exec -it alwaysup bash
+```
+_>Matar proceso de contenerdor. Extraemos el proceso en la PC ejecutando:_
+
+```
+docker inspect --format {{.State.Pid}} alwaysup 
+
+```
+_Esto nos devolverá el PID del proceso para eliminarlo_
 
 ### Instalación 🔧
 
